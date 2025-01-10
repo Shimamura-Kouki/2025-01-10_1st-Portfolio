@@ -1,25 +1,25 @@
 // スムーススクロール
 const paginations = document.querySelectorAll(".pagination a");
 paginations.forEach(pagination => {
-    pagination.addEventListener("click", e => {
-        e.preventDefault();
-        const targetId = e.target.hash;
-        const target = document.querySelector(targetId);
-        target.scrollIntoView({ behavior: "smooth" });
-    });
+  pagination.addEventListener("click", e => {
+    e.preventDefault();
+    const targetId = e.target.hash;
+    const target = document.querySelector(targetId);
+    target.scrollIntoView({ behavior: "smooth" });
+  });
 });
 
-// 交差点監視員
+// Intersection Observer
 const sections = document.querySelectorAll(".section");
 const observerRoot = document.querySelector(".fullPageScroll");
 const options = {
-    root: observerRoot,
-    rootMargin: "-50% 0px",
-    threshold: 0
+  root: observerRoot,
+  rootMargin: "-50% 0px",
+  threshold: 0
 };
 const observer = new IntersectionObserver(doWhenIntersect, options);
 sections.forEach(section => {
-    observer.observe(section);
+  observer.observe(section);
 });
 
 /**
@@ -27,9 +27,26 @@ sections.forEach(section => {
  * @param entries - IntersectionObserverEntry IntersectionObserverが交差したときに渡されるオブジェクトです。
  */
 function doWhenIntersect(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            activatePagination(entry.target);
-        }
-    });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      activatePagination(entry.target);
+    }
+  });
+}
+
+/**
+ * ページネーションの大きさを変える関数
+ * @param element - HTMLElement 現在表示中のスライドのHTML要素を引数に取ります。
+ */
+function activatePagination(element) {
+  const currentActiveIndex = document.querySelector(
+    "#pagination .active"
+  );
+  if (currentActiveIndex !== null) {
+    currentActiveIndex.classList.remove("active");
+  }
+  const newActiveIndex = document.querySelector(
+    `a[href='#${element.id}']`
+  );
+  newActiveIndex.classList.add("active");
 }
