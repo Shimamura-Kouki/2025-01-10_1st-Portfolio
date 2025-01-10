@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+}
+
+.title {
+    padding: 9px 160px;
+    align-items: center;
+    align-self: stretch;
+}
