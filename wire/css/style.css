@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
-/* フォントの取得 */
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Potta+One&family=RocknRoll+One&family=Stick&display=swap');
+* {
+  margin: 0;
+}
 
-/* テンプレート */
+
+/* フォントの取得 フォント読み込み不具合のため凍結
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Potta+One&family=RocknRoll+One&family=Stick&display=swap');
+*/
+
+/* ━━━━━━━━━━ テンプレート ━━━━━━━━━━
 .dotgothic16-regular {
   font-family: "DotGothic16", serif;
   font-weight: 400;
@@ -53,12 +59,13 @@
   font-weight: 600;
   font-style: normal;
 }
+*/
 
-/* 文字サイズ */
+/* ━━━━━━━━━━ 文字サイズ ━━━━━━━━━━ */
 /* タイトル */
 .Font_Title {
   font-family: "DotGothic16", serif;
-  font-size: 64px;
+  font-size: 6vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -67,7 +74,7 @@
 /* 警告文 */
 .Font_Warning {
   font-family: "Noto Serif JP", serif;
-  font-size: 32px;
+  font-size: 3vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -76,7 +83,7 @@
 /* サイト1st/サイト名 */
 .Font_Site-Name {
   font-family: "Stick", serif;
-  font-size: 96px;
+  font-size: 9.5vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -85,7 +92,16 @@
 /* 追尾ナビ/リスト */
 .Font_Tracking-List {
   font-family: "DotGothic16", serif;
-  font-size: 32px;
+  font-size: 2.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 追尾ナビ/タイトル */
+.Font_Tracking-Title {
+  font-family: "Stick", serif;
+  font-size: 4.5vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -94,7 +110,7 @@
 /* サイト案内/テキスト */
 .Font_Site-Guide {
   font-family: "Noto Sans JP", serif;
-  font-size: 48px;
+  font-size: 4.5vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -103,7 +119,7 @@
 /* 自己紹介/説明 */
 .Font_Self-introduction-Explanation {
   font-family: "RocknRoll One", serif;
-  font-size: 40px;
+  font-size: 4vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -112,7 +128,7 @@
 /* 自己紹介/本文 */
 .Font_Self-introduction-Main-Text {
   font-family: "Noto Serif JP", serif;
-  font-size: 40px;
+  font-size: 4vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -121,7 +137,7 @@
 /* 制作物紹介/タイトル */
 .Font_Production-Introduction-Title {
   font-family: "Potta One", serif;
-  font-size: 32px;
+  font-size: 3vmin;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -130,25 +146,94 @@
 /* 制作物紹介/本文 */
 .Font_Production-Introduction-Main-Text {
   font-family: "Klee One", serif;
-  font-size: 24px;
+  font-size: 2vmin;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
 
+/* ━━━━━━━━━━ レイアウト ━━━━━━━━━━ */
+
+a,
+a:hover,
+a:visited {
+  color: inherit;
+}
 
 .Definitely-not-the-front-page {
   display: flex;
-  padding: 50px;
+  padding: 4.92611vmin;
 }
 
 .title {
-  padding: 9px 160px;
+  padding: 0.8867vmin 15.76355vmin;
   align-items: center;
   align-self: stretch;
 }
 
 .top-li {
+  list-style: none;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.btn::before {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 8px;
+  background: rgb(112, 88, 163);
+  /* 下線の色 */
+  transition: inherit;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+/*━━━━━━━━━━ 追尾ナビ ━━━━━━━━━━*/
+.tracking-nav-overlay {
+  display: flex;
+  width: -webkit-fill-available;
+  height: 4vmin;
+  padding: 2.5vmin 11.82266vmin;
+  justify-content: space-between;
+  align-items: center;
+  background: #dadada;
+  border-radius: 0px 0px 4vmin 4vmin;
+  position: sticky;
+  top: 0;
+}
+
+.tracking-nav {
+  border: 0.19704vmin solid #000;
+  border-radius: 1.97044vmin;
+}
+
+.tracking-ul {
+  display: flex;
+  padding: 0px 1.97044vmin;
+  justify-content: center;
+  align-items: center;
+  gap: 4.92611vmin;
+}
+
+.tracking-li {
   list-style: none;
 }

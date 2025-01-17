@@ -1,31 +1,32 @@
 @charset "UTF-8";
 
-body {
+.Definitely-not-the-front-page {
     display: flex;
     /* width: 100%; */
-    padding: 50px;
+    padding: 4.92611vmin;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 4.92611vmin;
 }
 
 .explanation {
     display: flex;
-    padding: 40px 100px;
+    padding: 3.94089vmin 9.85222vmin;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-    border: 3px solid #000;
-    border-radius: 45px;
+    border: 0.29557vmin solid #000;
+    border-radius: 4.4335vmin;
 }
+
 
 /* history */
 
 .connector {
     text-align: center;
     display: block;
-    width: 10px;
-    height: 100px;
+    width: 1.31363vmin;
+    height: 9.85222vmin;
 }
 
 .connector svg {
@@ -49,57 +50,58 @@ body {
 .history-tree {
     display: flex;
     /* width: 1476px; */
-    padding: 0px 80px;
+    padding: 0px 10.50903vmin;
     flex-direction: column;
     align-items: center;
 }
 
 .history-separator {
     display: flex;
-    padding: 10px;
+    padding: 1.31363vmin;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1.31363vmin;
     align-self: stretch;
-    border: 2px solid #000;
-    border-radius: 30px;
+    border: 0.26273vmin solid #000;
+    border-radius: 2.95567vmin;
 }
 
 .history-explanation {
     display: flex;
-    width: 580px;
-    padding: 10px 30px;
+    width: 30.5vw;
+    padding: 1vmin 1.5vmin;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1.31363vmin;
     flex: 1 0 0;
     align-self: stretch;
     background: #dfdfdf;
-    border-radius: 45px;
+    border-radius: 4.4335vmin;
 }
 
 .history img {
-    border-radius: 45px;
+    border-radius: 4.4335vmin;
     background: #dfdfdf;
+    width: 33vw;
 }
 
 .history {
     display: flex;
-    padding: 10px;
+    padding: 1.31363vmin;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1.31363vmin;
     align-self: stretch;
-    border: 2px solid #000;
-    border-radius: 30px;
+    border: 0.26273vmin solid #000;
+    border-radius: 2.95567vmin;
 }
 
 .history-title {
     display: flex;
-    padding: 0px 10px;
+    padding: 0px 1.31363vmin;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1.31363vmin;
     align-self: stretch;
 }
 
@@ -107,7 +109,7 @@ body {
 .history-timestamp {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1.31363vmin;
     align-self: stretch;
 }
 
