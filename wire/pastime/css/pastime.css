@@ -10,7 +10,7 @@
 
 .gallery {
     display: flex;
-    padding: 6.21891vmin;
+    padding: 4vw 3vh;
     flex-direction: column;
     align-items: center;
     gap: 9.0796vmin;
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 7vmin;
+    gap: 5vh;
     flex-wrap: wrap;
 }
 
