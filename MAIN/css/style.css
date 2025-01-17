@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+}
+
+
+/* フォントの取得 フォント読み込み不具合のため凍結
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Potta+One&family=RocknRoll+One&family=Stick&display=swap');
+*/
+
+/* ━━━━━━━━━━ テンプレート ━━━━━━━━━━
+.dotgothic16-regular {
+  font-family: "DotGothic16", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-jp-<uniquifier> {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.stick-regular {
+  font-family: "Stick", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-jp-<uniquifier> {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.rocknroll-one-regular {
+  font-family: "RocknRoll One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.potta-one-regular {
+  font-family: "Potta One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.klee-one-regular {
+  font-family: "Klee One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.klee-one-semibold {
+  font-family: "Klee One", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+*/
+
+/* ━━━━━━━━━━ 文字サイズ ━━━━━━━━━━ */
+/* タイトル */
+.Font_Title {
+  font-family: "DotGothic16", serif;
+  font-size: 6vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 警告文 */
+.Font_Warning {
+  font-family: "Noto Serif JP", serif;
+  font-size: 3vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* サイト1st/サイト名 */
+.Font_Site-Name {
+  font-family: "Stick", serif;
+  font-size: 9.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(---, #d9333f);
+  -webkit-text-stroke-width: 0.3vmin;
+  -webkit-text-stroke-color: var(---, #3491D9);
+
+}
+
+/* 追尾ナビ/リスト */
+.Font_Tracking-List {
+  font-family: "DotGothic16", serif;
+  font-size: 2.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(---, #68699B);
+}
+
+/* 追尾ナビ/タイトル */
+.Font_Tracking-Title {
+  font-family: "Stick", serif;
+  font-size: 4.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(---, #FFF);
+  -webkit-text-stroke-width: 0.13vmin;
+  -webkit-text-stroke-color: var(---, #D9333F);
+
+}
+
+/* サイト案内/テキスト */
+.Font_Site-Guide {
+  font-family: "Noto Sans JP", serif;
+  font-size: 4.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 自己紹介/説明 */
+.Font_Self-introduction-Explanation {
+  font-family: "RocknRoll One", serif;
+  font-size: 3.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 自己紹介/本文 */
+.Font_Self-introduction-Main-Text {
+  font-family: "Noto Serif JP", serif;
+  font-size: 3.5vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 制作物紹介/タイトル */
+.Font_Production-Introduction-Title {
+  font-family: "Potta One", serif;
+  font-size: 3vmin;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 制作物紹介/本文 */
+.Font_Production-Introduction-Main-Text {
+  font-family: "Klee One", serif;
+  font-size: 2vmin;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+/* ━━━━━━━━━━ レイアウト ━━━━━━━━━━ */
+
+body {
+  background: #DBEDFF;
+}
+
+a,
+a:hover,
+a:visited {
+  color: inherit;
+}
+
+
+.Definitely-not-the-front-page {
+  display: flex;
+  padding: 10vmin;
+}
+
+.title {
+  padding: 0.8vmin 15.7vmin;
+  align-items: center;
+  align-self: stretch;
+}
+
+
+.top-li {
+  display: flex;
+  list-style: none;
+  border-radius: 10px;
+  padding: 1vmin 1.5vmin;
+  justify-content: center;
+  align-self: stretch;
+  background: var(---, #E0E1EB);
+}
+
+.btn {
+  position: relative;
+}
+
+.btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.btn::before {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 8px;
+  background: rgb(112, 88, 163);
+  /* 下線の色 */
+  transition: inherit;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+/*━━━━━━━━━━ 追尾ナビ ━━━━━━━━━━*/
+.tracking-nav-overlay {
+  display: flex;
+  width: -webkit-fill-available;
+  height: 4vmin;
+  padding: 2.5vmin 12vmin;
+  justify-content: space-between;
+  align-items: center;
+  background: var(---, linear-gradient(180deg, #336ED8 0%, #00D4FF 100%));
+  border-radius: 0px 0px 4vmin 4vmin;
+  position: sticky;
+  top: 0;
+}
+
+.tracking-nav {
+  border-radius: 2vmin;
+  border: 0.25vmin solid;
+  border-image: linear-gradient(180deg, #95A2BA 0%, #002b33 100%);
+  border-image-slice: 1;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.tracking-ul {
+  display: flex;
+  padding: 0px 2vmin;
+  justify-content: center;
+  align-items: center;
+  gap: 5vmin;
+}
+
+.tracking-li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  padding: 0.8vmin 1.5vmin;
+  border-radius: 10px;
+  background: var(---, #E0E1EB);
+}

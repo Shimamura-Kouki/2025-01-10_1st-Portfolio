@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fullPageScroll {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  padding: 10%;
+  scroll-snap-align: start;
+}
+
+
+/* id section1 */
+#section1 {
+  padding: 0;
+  background-image: url(https://placehold.jp/1920x1080.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#section1 h1 {
+  font-size: 96px;
+}
+
+.top-nav {
+  position: absolute;
+  bottom: 6vmin;
+  right: 9.2vmin;
+  display: flex;
+  padding: 0.9vmin;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9vmin;
+  flex-shrink: 0;
+}
+
+.top-ul {
+  display: flex;
+  padding: 0.9vmin 2vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+  border: 0.2vmin solid #000;
+  border-radius: 2vmin;
+}
+
+/* id aite-jump */
+#section2 {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  /* padding: 0%; */
+  border: 0.1vmin solid var(---, #000);
+}
+
+.bigbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.btn-Left {
+  background: #adadad;
+}
+
+.btn-Right {
+  background: #dadada;
+}
+
+.btn-bottom {
+  align-self: stretch;
+}
+
+.btn-thoughts {
+  display: flex;
+  padding: 6vmin;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: #fefefe;
+}
+
+
+/* id about */
+#section3 {
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.title-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  border-right: 0.2vmin solid #000;
+}
+
+.left {
+  display: flex;
+  padding: 5vmin 5vmin 5vmin 9.2vmin;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.Name-Department {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.9vmin;
+  align-self: stretch;
+}
+
+.Name-Department div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.9vmin;
+  flex: 1 0 0;
+
+}
+
+.self-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.9vmin;
+  align-self: stretch;
+}
+
+.skill {
+  align-self: stretch;
+}
+
+.skill-deta {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-LR {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9vmin;
+  flex: 1 0 0;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  padding: 4vmin 9vmin 4vmin 4vmin;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9vmin;
+  align-self: stretch;
+  border-left: 0.2vmin solid #000;
+}
+
+.map {
+  width: 100%;
+  flex: 1 0 0;
+  background: #dadada;
+}

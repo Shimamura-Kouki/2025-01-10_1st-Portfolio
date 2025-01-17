@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.Definitely-not-the-front-page {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.92611vmin;
+}
+
+.form {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 70);
+    width: 100%;
+    background: #d9d9d9;
+}

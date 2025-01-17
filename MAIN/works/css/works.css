@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.Definitely-not-the-front-page {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    align-items: center;
+    gap: 5vmin;
+}
+
+.explanation {
+    display: flex;
+    padding: 3.94089vmin 9.85222vmin;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border: 0.29557vmin solid #000;
+    border-radius: 4.4335vmin;
+}
+
+
+/* history */
+
+.connector {
+    text-align: center;
+    display: block;
+    width: 1.31363vmin;
+    height: 9.85222vmin;
+}
+
+.connector svg {
+    width: 100%;
+    height: 100%;
+}
+
+.connector line {
+    stroke: black;
+    stroke-width: 2;
+}
+
+
+.history-data {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.history-tree {
+    display: flex;
+    /* width: 1476px; */
+    padding: 0px 10.50903vmin;
+    flex-direction: column;
+    align-items: center;
+    color: #F1F1F1;
+}
+
+.history-separator {
+    display: flex;
+    padding: 1.31363vmin;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.31363vmin;
+    align-self: stretch;
+    border: 0.26273vmin solid #000;
+    border-radius: 2.95567vmin;
+}
+
+.history-explanation {
+    display: flex;
+    width: 30.5vw;
+    padding: 1vmin 1.5vmin;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.31363vmin;
+    flex: 1 0 0;
+    align-self: stretch;
+    background: #001E43;
+    border-radius: 4.4335vmin;
+}
+
+.history img {
+    border-radius: 4.4335vmin;
+    background: #dfdfdf;
+    width: 33vw;
+}
+
+.history {
+    display: flex;
+    padding: 1.31363vmin;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.31363vmin;
+    align-self: stretch;
+    border: 0.26273vmin solid #000;
+    border-radius: 2.95567vmin;
+}
+
+.history-title {
+    display: flex;
+    padding: 0px 1.31363vmin;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.31363vmin;
+    align-self: stretch;
+}
+
+.history-title-title,
+.history-timestamp {
+    display: flex;
+    align-items: center;
+    gap: 1.31363vmin;
+    align-self: stretch;
+}
+
+.history-timestamp {
+    align-items: flex-end;
+}

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.Definitely-not-the-front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.21891vmin;
+}
+
+.gallery {
+    display: flex;
+    padding: 4vw 3vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 9.0796vmin;
+    border: 0.37313vmin solid #000;
+    background: rgba(255, 219, 255, 0.30);
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 5vh;
+    flex-wrap: wrap;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #aeaeae;
+}
